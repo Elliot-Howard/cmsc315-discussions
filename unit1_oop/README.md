@@ -33,3 +33,44 @@ Your reflection should be approximately 150–200 words and address the followin
 2. What challenges did you encounter, and how did you overcome them?
 3. Compare OOP to procedural programming.
 4. Discuss the benefits of maintainability and reusability and apply this managing overhead, practical application development, and future use.
+
+
+## Implementation Documentation
+
+### Program Description
+
+For this assignment, I created a vehicle management program using Python. The program demonstrated object-oriented programming concepts such as inheritance, namespaces, and object copying.
+
+### Parent Class
+
+I created a parent class called `Vehicle` that stored basic information about a vehicle, including its make and model. The class included a constructor, class variables, instance variables, and a method to display vehicle information.
+
+### Child Class
+
+I created a child class called `Car` that inherited from `Vehicle`. The child class added information such as the year and a list of features. I also overrode the parent class method to display more detailed information about the car.
+
+### Namespaces
+
+I created two car objects to demonstrate how class and instance namespaces worked. I accessed a class variable through the class and an object. I also added an attribute to only one object and used `__dict__` to display their namespaces.
+
+### Shallow and Deep Copying
+
+I used `copy()` and `deepcopy()` to demonstrate how Python copies objects. I created a car object containing a list of features and made both types of copies.
+
+After modifying the original list, the shallow copy reflected the change because it shared the same nested list. The deep copy remained unchanged because it had its own independent list.
+
+### Student-Created Extension
+
+I added a method that allowed new features to be added to a car. This demonstrated how classes could be expanded with additional functionality.
+
+### Memory Usage
+
+I learned that shallow copying generally used less additional memory because it shared nested objects. Deep copying required more memory because it created independent copies of nested objects.
+
+### Testing
+
+I tested the program by creating vehicle and car objects, calling their methods, examining namespaces, and comparing shallow and deep copies. I also tested the method for adding car features.
+
+### Future Improvements
+
+In the future, I could add methods to remove features, update vehicle information, and save vehicle records to a file.
