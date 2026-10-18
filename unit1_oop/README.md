@@ -74,3 +74,11 @@ I tested the program by creating vehicle and car objects, calling their methods,
 ### Future Improvements
 
 In the future, I could add methods to remove features, update vehicle information, and save vehicle records to a file.
+
+### Additional Testing and Edge Cases
+
+I added four additional test cases to check how the `add_feature()` method handles different inputs. First, I added "Sunroof" to verify that a valid feature could be added. Then I tested an empty string, a string containing only spaces, and a number instead of text.
+
+The program rejected all three invalid inputs and displayed "Invalid feature." without crashing. I also printed the final feature list to confirm that only valid features were added.
+
+These tests showed how input validation helps prevent incorrect data from being stored.

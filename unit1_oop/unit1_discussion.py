@@ -185,6 +185,16 @@ def main():
     car.add_feature("Heated Seats")
     print(car.display_info())
 
+    # Additional test cases
+    print("\n=== Additional Test Cases ===")
+
+    car.add_feature("Sunroof")
+    car.add_feature("")
+    car.add_feature("   ")
+    car.add_feature(123)
+
+    print("Final car features:", car.features)
+
     demonstrate_namespaces()
     demonstrate_copying()
 
